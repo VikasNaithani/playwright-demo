@@ -35,7 +35,7 @@ jobs:
       run: npx playwright install --with-deps
       
     - name: Run Playwright tests with Qase Reporter
-      run: npx playwright test --config=playwright.config.js --shard=${{ matrix.shard }}/4
+      run: npx playwright test --config=playwright.qase.config.js --shard=${{ matrix.shard }}/4
       env:
         CI: true
         SHARD: true
