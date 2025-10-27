@@ -6,10 +6,10 @@ on:
       branch:
         description: 'Branch to run tests on'
         required: true
-        default: 'main'
+        default: 'docs/sharding'
         type: choice
         options:
-          - main
+          - docs/sharding
 
 jobs:
   test:
